@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">ProfileManager</string>
+    <string name="btn_googleMaps">Open in Google Maps</string>
+    <string name="btn_loadImagePhone">Load from Phone</string>
+</resources>
