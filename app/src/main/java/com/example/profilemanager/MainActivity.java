@@ -23,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
         Uri gmmIntentUri = Uri.parse("http://maps.google.co.in/maps?q="+teamAddress.getText());
         //Create an Intent from gmmIntentUri. Set the action to ACTION_VIEW
         Intent mapIntent = new Intent(Intent.ACTION_VIEW, gmmIntentUri);
-        //Make the Intent explicit by setting the Google Mapspackage
+        //Make the Intent explicit by setting the Google Maps package
         mapIntent.setPackage("com.google.android.apps.maps");
 
         startActivity(mapIntent);
@@ -36,11 +36,13 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+
         super.onActivityResult(requestCode, resultCode, data);
+
         if (resultCode == RESULT_CANCELED) return;
 
-        ImageView avatarImage = (ImageView) findViewById(R.id.avatarImage);
         // Retrieve avatar image
+        ImageView avatarImage = (ImageView) findViewById(R.id.avatarImage);
         String drawableName = "ic_logo_00";
 
         switch (data.getIntExtra("imageID", R.id.teamid00)) {
@@ -69,4 +71,5 @@ public class MainActivity extends AppCompatActivity {
         int resID = getResources().getIdentifier(drawableName, "drawable", getPackageName());
         avatarImage.setImageResource(resID);
     }
+
 }

@@ -15,7 +15,7 @@ public class ProfileActivity extends AppCompatActivity {
         setContentView(R.layout.activity_profile);
     }
 
-    public void SetTeamIcon(View view) {
+    public void setTeamIcon(View view) {
         //Return intent to pass back to main activity
         Intent returnIntent = new Intent();
 

@@ -2,4 +2,10 @@
     <string name="app_name">ProfileManager</string>
     <string name="btn_googleMaps">Open in Google Maps</string>
     <string name="btn_loadImagePhone">Load from Phone</string>
+    <string name="app_title">Soccer Team Manager</string>
+    <string name="hint_teamName">(Please enter a team name)</string>
+    <string name="text_teamname">Team Name</string>
+    <string name="hint_zipcode">(Please enter a zip code)</string>
+    <string name="text_teamaddress">Team Address</string>
+    <string name="text_teamselect">Select Team</string>
 </resources>

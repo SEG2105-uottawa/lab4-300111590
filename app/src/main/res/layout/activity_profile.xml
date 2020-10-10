@@ -14,18 +14,21 @@
         <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Select Team" />
+                android:text="@string/text_teamselect"
+                android:textAlignment="center" />
 
         <androidx.gridlayout.widget.GridLayout
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_gravity="center"
                 app:columnCount="3">
 
             <ImageView
                     android:id="@+id/teamid00"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:onClick="SetTeamIcon"
+                    android:clickable="true"
+                    android:onClick="setTeamIcon"
                     app:layout_column="0"
                     app:layout_columnSpan="1"
                     app:layout_row="0"
@@ -36,7 +39,7 @@
                     android:id="@+id/teamid01"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:onClick="SetTeamIcon"
+                    android:onClick="setTeamIcon"
                     app:layout_column="1"
                     app:layout_columnSpan="1"
                     app:layout_row="0"
@@ -47,7 +50,7 @@
                     android:id="@+id/teamid02"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:onClick="SetTeamIcon"
+                    android:onClick="setTeamIcon"
                     app:layout_column="2"
                     app:layout_columnSpan="1"
                     app:layout_row="0"
@@ -58,7 +61,7 @@
                     android:id="@+id/teamid03"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:onClick="SetTeamIcon"
+                    android:onClick="setTeamIcon"
                     app:layout_column="0"
                     app:layout_columnSpan="1"
                     app:layout_row="1"
@@ -69,7 +72,7 @@
                     android:id="@+id/teamid04"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:onClick="SetTeamIcon"
+                    android:onClick="setTeamIcon"
                     app:layout_column="1"
                     app:layout_columnSpan="1"
                     app:layout_row="1"
@@ -80,7 +83,7 @@
                     android:id="@+id/teamid05"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:onClick="SetTeamIcon"
+                    android:onClick="setTeamIcon"
                     app:layout_column="2"
                     app:layout_columnSpan="1"
                     app:layout_row="1"

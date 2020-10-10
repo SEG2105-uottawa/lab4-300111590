@@ -17,14 +17,16 @@
                 android:id="@+id/avatarImage"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
+                android:layout_gravity="center"
                 android:onClick="OnSetAvatarButton"
-                tools:srcCompat="@drawable/ic_logo_00" />
+                app:srcCompat="@drawable/ic_logo_00" />
 
         <TextView
                 android:id="@+id/titleTextView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Soccer Team Manager" />
+                android:text="@string/app_title"
+                android:textAlignment="center" />
 
         <Space
                 android:layout_width="match_parent"
@@ -32,8 +34,10 @@
 
         <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
                 android:layout_weight="1"
+                android:gravity="center"
                 android:orientation="vertical">
 
             <EditText
@@ -41,20 +45,24 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:ems="10"
-                    android:hint="(Please enter a team name)"
-                    android:inputType="textPersonName" />
+                    android:hint="@string/hint_teamName"
+                    android:inputType="textPersonName"
+                    android:textAlignment="center" />
 
             <TextView
                     android:id="@+id/teamNameTextField"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Team Name" />
+                    android:text="@string/text_teamname"
+                    android:textAlignment="center" />
         </LinearLayout>
 
         <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
                 android:layout_weight="1"
+                android:gravity="center"
                 android:orientation="vertical">
 
             <EditText
@@ -62,14 +70,16 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:ems="10"
-                    android:hint="(Please enter a zip code)"
-                    android:inputType="textPersonName" />
+                    android:hint="@string/hint_zipcode"
+                    android:inputType="textPersonName"
+                    android:textAlignment="center" />
 
             <TextView
                     android:id="@+id/teamAddressTextField"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Team Address" />
+                    android:text="@string/text_teamaddress"
+                    android:textAlignment="center" />
         </LinearLayout>
 
         <Space
@@ -78,9 +88,9 @@
 
         <Button
                 android:id="@+id/btn_maps"
-                android:layout_width="fill_parent"
-                android:layout_height="fill_parent"
-                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
                 android:onClick="OnOpenInGoogleMaps"
                 android:text="@string/btn_googleMaps" />
     </LinearLayout>
