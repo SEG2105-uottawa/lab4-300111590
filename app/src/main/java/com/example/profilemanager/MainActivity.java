@@ -31,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void OnSetAvatarButton(View view){
         Intent intent = new Intent(getApplicationContext(), ProfileActivity.class);
-        startActivity(intent);
+        startActivityForResult(intent, 0);
     }
 
     @Override
@@ -42,7 +42,7 @@ public class MainActivity extends AppCompatActivity {
         if (resultCode == RESULT_CANCELED) return;
 
         // Retrieve avatar image
-        ImageView avatarImage = (ImageView) findViewById(R.id.avatarImage);
+        ImageView avatarImage = (ImageView) findViewById(R.id.avatar);
         String drawableName = "ic_logo_00";
 
         switch (data.getIntExtra("imageID", R.id.teamid00)) {
